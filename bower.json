@@ -1,0 +1,17 @@
+{
+  "name": "studionow",
+  "version": "1.0.0",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    ".jshintrc"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "bootstrap": "^3.3.7",
+    "background-video": "*",
+    "font-awesome": "Font-Awesome#^4.6.3"
+  }
+}
