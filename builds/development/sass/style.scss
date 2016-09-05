@@ -56,6 +56,9 @@ body {
     background-color: transparent;
     border-color: #9F87D2;
     transition: 400ms;
+    font-size: 20px;
+    padding: 10px 20px;
+
 
     a {
         color: #9F87D2;
@@ -247,6 +250,60 @@ a:active {
     }
 }
 
+.image-side {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 850px;
+
+    h1 {
+        color: #25737C;
+        font-size: 48px;
+    }
+
+    p {
+        font-size: 22px;
+        margin: 40px 0;
+    }
+
+    &.side-left {
+        & > .block-text {
+            width: 45%;
+        }
+
+        & > .block-img {
+            width: 45%;
+            position: relative;
+        }
+
+        img {
+            max-height: 800px;
+            position: absolute;
+            top: -400px;
+            right: 30%;
+        }
+
+    }
+
+    &.side-right {
+        & > .block-text {
+            width: 40%;
+        }
+
+        & > .block-img {
+            width: 40%;
+            position: relative;
+        }
+
+        img {
+            position: absolute;
+            left: 30%;
+        }
+
+    }
+}
+
 #refreshing {
     height: 460px;
     display: flex;
@@ -267,40 +324,15 @@ a:active {
 }
 
 #table {
-    height: 850px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    & > .block-text {
-        width: 40%;
+    img{
+      height: 800px;
+      top: -400px;
     }
+}
 
-    & > .block-img {
-        width: 40%;
-        position: relative;
-    }
-
-    h1 {
-        color: #25737C;
-        font-size: 48px;
-    }
-
-    p {
-        font-size: 22px;
-        margin: 40px 0;
-    }
-
-    .btn-transparent-violet {
-        font-size: 20px;
-        padding: 10px 20px;
-    }
-
-    img {
-        max-height: 800px;
-        position: absolute;
-        top: -400px;
-        left: 30%;
-    }
+#people{
+  img{
+    height: 600px;
+    top: -300px;
+  }
 }
