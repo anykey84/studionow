@@ -265,6 +265,7 @@ a:active {
     p {
         font-size: 22px;
         margin: 40px 0;
+        line-height: 40px;
     }
 
     &.side-left {
@@ -335,4 +336,11 @@ a:active {
     height: 600px;
     top: -300px;
   }
+}
+
+#network {
+    img{
+      height: 600px;
+      top: -300px;
+    }
 }
