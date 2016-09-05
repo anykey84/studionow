@@ -1,44 +1,67 @@
 @import "../libs/bootstrap/css/bootstrap.css";
-@import "../libs/font-awesome/css/font-awesome.min.css";
-// Our SASS Files
+@import "../libs/font-awesome/css/font-awesome.min.css"; // Our SASS Files
 // @import "includes/varibles";
 // @import "includes/mixins";
 // @import "includes/stack";
-@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400&subset=cyrillic';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400&subset=cyrillic';
+
 body {
     font-family: 'Open Sans', sans-serif;
     width: 100%;
     height: 100%;
     font-size: 14px;
 }
+
 .btn-transparent {
     color: #fff;
     background-color: transparent;
     border-color: #fff;
     transition: 400ms;
+
     a {
         color: #fff;
     }
+
     a:active,
     a:hover,
     a:visited {
         text-decoration: none;
     }
+
     &:hover {
         background-color: #fff;
         color: #000;
+
         a {
             color: #000;
         }
     }
 }
+
 a:active {
     color: inherit;
 }
+
 #top {
+    position: relative;
     height: 692px;
     overflow: hidden;
     color: #fff;
+    display: flex;
+
+    & > div {
+        height: 100%;
+        width: 100%;
+    }
+
+    & > div > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        height: 100%;
+    }
+
     #video_background {
         position: absolute;
         top: 0;
@@ -49,17 +72,22 @@ a:active {
         width: 100%;
         height: auto;
     }
+
     #top-row {
         margin: 15px 30px;
+
         #top-logo img {
             width: 213px;
         }
     }
+
     #top-menu {
         list-style: none;
         font-size: 14px;
+
         li {
             display: inline-block;
+
             a {
                 display: block;
                 padding: 10px 20px;
@@ -68,9 +96,11 @@ a:active {
                 text-transform: uppercase;
                 text-decoration: none;
             }
+
             &.active {
                 background-color: #fff;
                 border-radius: 4px;
+
                 a {
                     color: #000;
                     text-transform: none;
@@ -79,24 +109,67 @@ a:active {
             }
         }
     }
+
     #watch-highlight-reel {
         padding: 15px 20px;
-        border: 1px solid rgba(255,255,255,.7);
+
         a {
             font-size: 20px;
             font-weight: 300;
         }
+
         .fa {
             margin-left: 10px;
             font-size: 24px;
         }
     }
-    #video-elevated{
-        h1{
-          font-size: 60px;
+
+    #video-elevated {
+        h1 {
+            font-size: 60px;
         }
-        h2{
-          font-size: 20px;
+
+        h2 {
+            font-size: 20px;
+        }
+    }
+
+    #integrated-solutions {
+        margin-left: auto;
+        margin-right: auto;
+        width: 827px;
+
+        & > div {
+            width: 100%;
+            display: table;
+
+            & > a {
+                display: table-cell;
+                color: #fff;
+                transition: 500ms;
+
+                &:active,
+                &:hover {
+                    text-decoration: none;
+                    color: silver;
+                }
+
+                .sn {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+    #top-overlay {
+        display: flex;
+        background-color: #000;
+        opacity: 0.5;
+        height: 40px;
+        font-size: 20px;
+
+        & > div {
+            margin: auto;
         }
     }
 }
