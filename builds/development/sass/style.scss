@@ -20,6 +20,11 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
+.container-fluid {
+    max-width: 100%;
+    overflow: hidden;
+}
+
 .btn-transparent {
     color: #fff;
     background-color: transparent;
@@ -267,7 +272,6 @@ a:active {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
 
     & > .block-text {
         width: 40%;
