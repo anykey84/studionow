@@ -5,4 +5,5 @@ bower_components/
 node_modules/
 builds/development/libs/**/*
 builds/development/css/style.min.css
-builds/dist/video/LightStreaksDeepBlue.mp4
+builds/dist/video/*
+builds/dist/video/
