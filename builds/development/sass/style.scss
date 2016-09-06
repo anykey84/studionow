@@ -522,4 +522,21 @@ a:active {
 
 #feedback{
   padding: 80px 0;
+
+  .row{
+    & > div:first-child{
+      padding-right: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding-left: 10%;
+    }
+    & > div:last-child{
+      padding-left: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding-right: 10%;
+    }
+  }
 }
