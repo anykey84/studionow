@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Studionow</title>
     <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.0/dist/aos.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -148,12 +149,12 @@
                 </p>
                 <div class="btn btn-transparent-violet"><a href="#">More about SN Cloud</a></div>
             </div>
-            <div class="block-img"><img src="img/Illustration-Tecnology-Panel@2x.png" alt=""></div>
+            <div class="block-img" data-aos="fade-left"><img src="img/Illustration-Tecnology-Panel@2x.png" alt=""></div>
 
         </div>
 
         <div id="people" class="grey-background image-side side-left">
-            <div class="block-img"><img src="img/Illustration-People-Panel@2x.png" alt=""></div>
+            <div class="block-img" data-aos="fade-right"><img src="img/Illustration-People-Panel@2x.png" alt=""></div>
             <div class="block-text">
                 <h1>We're not just technology;<br>we're powered by people too.</h1>
                 <p>
@@ -172,7 +173,7 @@
                 </p>
                 <div class="btn btn-transparent-violet"><a href="#">More about SN Network</a></div>
             </div>
-            <div class="block-img"><img src="img/Illustration-Creatives-Panel@2x.png" alt=""></div>
+            <div class="block-img" data-aos="fade-left"><img src="img/Illustration-Creatives-Panel@2x.png" alt=""></div>
         </div>
         <div id="magic" class="grey-background">
             <h1>We're making video magic happen.</h1>
@@ -317,10 +318,14 @@
     <!-- Others JS Files -->
     <script src="libs/jquery/jquery.js"></script>
     <script src="/libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.0/dist/aos.js"></script>
     <!-- <script src="/libs/jquery.backgroundvideo.min.js"></script> -->
     <!-- AngularJs vDependencies -->
     <!-- Our JS App Fies -->
     <script src="app/app.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
