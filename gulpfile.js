@@ -32,6 +32,11 @@ gulp.task('img', function() {
         .pipe(gulp.dest('builds/dist/img/'));
 });
 
+gulp.task('fonts', function() {
+    gulp.src('builds/development/fonts/**/*')
+        .pipe(gulp.dest('builds/dist/fonts/'));
+});
+
 gulp.task('watch', function() {
     gulp.watch('builds/development/app/**/*.js', ['js']);
     gulp.watch('builds/development/sass/**/*.scss', ['sass']);
@@ -68,6 +73,7 @@ gulp.task('default', [
     'html',
     'img',
     'js',
+    'fonts',
     'sass',
     'webserver',
     'watch'

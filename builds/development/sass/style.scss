@@ -3,10 +3,65 @@
 // @import "includes/varibles";
 // @import "includes/mixins";
 // @import "includes/stack";
-@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400&subset=cyrillic';
+
+
+@font-face {
+	font-family: 'Gotham Book';
+	src: url('../fonts/Gotham-Book.eot');
+	src: url('../fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Gotham-Book.woff') format('woff'),
+		url('../fonts/Gotham-Book.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Gotham Bold';
+	src: url('../fonts/Gotham-Bold.eot');
+	src: url('../fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Gotham-Bold.woff') format('woff'),
+		url('../fonts/Gotham-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'OpenSans Light';
+	src: url('../fonts/OpenSans-Light.eot');
+	src: url('../fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/OpenSans-Light.woff') format('woff'),
+		url('../fonts/OpenSans-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OpenSansLight Italic';
+	src: url('../fonts/OpenSansLight-Italic.eot');
+	src: url('../fonts/OpenSansLight-Italic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/OpenSansLight-Italic.woff') format('woff'),
+		url('../fonts/OpenSansLight-Italic.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}
+
+
+@font-face {
+	font-family: 'OpenSans Semibold';
+	src: url('../fonts/OpenSans-Semibold.eot');
+	src: url('../fonts/OpenSans-Semibold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/OpenSans-Semibold.woff') format('woff'),
+		url('../fonts/OpenSans-Semibold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+
+
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'OpenSans Light', 'Gotham Book', sans-serif;
     width: 100%;
     height: 100%;
     font-size: 14px;
@@ -19,9 +74,13 @@ body {
 
 h1,
 h2,
-h3,
+h3{}
 p {
     color: #4D4D4D;
+}
+
+h1, h2, h3{
+  font-family: 'Gotham Book', 'OpenSans Light', sans-serif
 }
 
 input[type=text], input[type=email], input[type=number] {
@@ -197,6 +256,7 @@ a:active {
             &.active {
                 background-color: #fff;
                 border-radius: 4px;
+                font-family: 'OpenSans Semibold';
 
                 a {
                     color: #000;
@@ -262,6 +322,7 @@ a:active {
 
                 .sn {
                     margin-top: 10px;
+                    font-family: 'Gotham Bold';
                 }
             }
         }
@@ -468,6 +529,7 @@ a:active {
                 color: #6D6B6C;
                 font-weight: bold;
                 font-size: 20px;
+                font-family: 'Gotham Bold';
             }
 
             .lead {
@@ -560,6 +622,14 @@ a:active {
                 margin-top: 180px;
                 width: 90%;
             }
+
+            h1{
+              font-size: 50px;
+            }
+
+            p{
+              font-size: 20px;
+            }
         }
 
         & > div:last-child {
@@ -620,8 +690,9 @@ a:active {
                   color: #fff;
                 }
                 input[type=submit]{
-                  font-size: 24px;
+                  font-size: 26px;
                   margin-top: 30px;
+                  font-family: 'Gotham Book';
                 }
             }
         }
