@@ -287,6 +287,8 @@ a:active {
 
         h3 {
             color: #fff;
+            font-family: 'OpenSansLight Italic';
+            margin-bottom: 30px;
         }
 
         & > div {
@@ -308,6 +310,10 @@ a:active {
                     margin-top: 10px;
                     font-family: 'Gotham Bold';
                 }
+
+                img {
+                    height: 75px;
+                }
             }
         }
     }
@@ -326,7 +332,7 @@ a:active {
 }
 
 #brands {
-    width: 100%;
+    padding: 0;
     height: 360px;
     display: table;
 
@@ -364,7 +370,7 @@ a:active {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 850px;
+    padding: 50px 0;
 
     h1 {
         color: #25737C;
@@ -413,7 +419,9 @@ a:active {
 }
 
 #refreshing {
-    height: 460px;
+    text-align: center;
+    padding: 50px 5%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -458,6 +466,7 @@ a:active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 
     h1 {
         color: #25737C;
@@ -540,6 +549,7 @@ a:active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 
     h1 {
         color: #4A4A4A;
@@ -659,6 +669,10 @@ a:active {
         .tab-content {
             margin-top: 40px;
 
+            img {
+                max-width: 100%;
+            }
+
             form {
                 margin-top: 40px;
 
@@ -683,3 +697,116 @@ a:active {
         }
     }
 }
+@media (max-width: 1200px) {
+    #top {
+        height: 610px;
+
+        #top-menu li a {
+            padding: 10px;
+        }
+
+        #integrated-solutions {
+            width: 100%;
+
+            & > div > a img {
+                height: auto;
+                width: auto;
+                max-width: 95%;
+            }
+        }
+    }
+
+    #feedback .row > div:last-child {
+        padding: 0 2%;
+    }
+}
+@media (max-width: 992px) {
+    #top {
+        #top-row {
+            margin: 15px 0;
+        }
+
+        #top-menu li a {
+            padding: 5px;
+        }
+    }
+
+    .image-side {
+        flex-direction: column;
+
+        &.side-right {
+            img {
+                left: inherit;
+            }
+
+            & > .block-text {
+                width: 95%;
+                text-align: center;
+            }
+
+            & > .block-img {
+                width: 100%;
+                position: relative;
+                text-align: center;
+                margin-top: 50px;
+
+                img {
+                    position: relative;
+                }
+            }
+        }
+
+        &.side-left {
+            img {
+                right: inherit;
+            }
+
+            & > .block-text {
+                width: 95%;
+                text-align: center;
+            }
+
+            & > .block-img {
+                width: 100%;
+                position: relative;
+                text-align: center;
+                margin-top: 50px;
+
+                img {
+                    position: relative;
+                }
+            }
+        }
+    }
+
+    #table img {
+        height: auto;
+        top: inherit;
+        width: 80%;
+    }
+
+    #people {
+        flex-direction: column-reverse;
+    }
+
+    #network img,
+    #people img {
+        height: auto;
+        top: inherit;
+        width: 100%;
+    }
+
+    #made-easy > div > div > div {
+        padding: 30px;
+    }
+
+    #feedback .row > div:last-child {
+        padding: 0;
+        margin-top: 50px;
+    }
+
+    #feedback .row .tab-content {
+        padding: 0 40px;
+    }
+}
+@media (max-width: 768px) {}
