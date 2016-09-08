@@ -13,11 +13,11 @@ $(function() {
     //   });
 
     $('#integrated-solutions a').on('click', function() {
-      scrollTo($('#magic'));
+        scrollTo($(this).attr('href'));
     })
 
     function scrollTo(element) {
-        console.log("!");
+
         var offset = 0;
         // скорость скролла
         var speed = 1000;
