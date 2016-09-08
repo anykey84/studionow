@@ -75,6 +75,10 @@ input[type=text] {
     }
 }
 
+a:active {
+    color: inherit;
+}
+
 a:active,
 a:visited {
     text-decoration: none;
@@ -184,8 +188,9 @@ a:visited {
     }
 }
 
-a:active {
-    color: inherit;
+.sn {
+    margin-top: 10px;
+    font-family: 'Gotham Bold';
 }
 
 #top {
@@ -337,59 +342,6 @@ a:active {
     }
 }
 
-.solutions {
-    #top {
-        height: auto;
-        background-image: url("../img/solutions-bg.jpg");
-        background-size: cover;
-
-        #video-elevated {
-            margin: 60px 20px 90px;
-
-            h1 {
-                font-size: 48px;
-            }
-        }
-
-        #integrated-solutions {
-            width: 100%;
-
-            & > div {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                align-items: stretch;
-
-                a {
-                    border-right: 1px solid rgba(255,255,255,0.35);
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    width: 20%;
-
-                    p {
-                        color: #fff;
-                        font-size: 12px;
-                        width: 90%;
-                        margin-left: auto;
-                        margin-right: auto;
-                        margin-bottom: auto;
-                    }
-
-                    div.arrow {
-                        font-size: 40px;
-                        font-family: 'OpenSans Light';
-                    }
-
-                    &:last-child {
-                        border: 0;
-                    }
-                }
-            }
-        }
-    }
-}
-
 #brands {
     padding: 0;
     height: 360px;
@@ -433,7 +385,8 @@ a:active {
 
     h1 {
         color: #25737C;
-        font-size: 48px;
+        font-size: 56px;
+        margin-top: 5px;
     }
 
     p {
@@ -442,36 +395,55 @@ a:active {
         line-height: 40px;
     }
 
+    .block-text {
+        width: 50%;
+
+        & > .sn-img {
+            text-align: center;
+
+            img {
+                height: 124px;
+            }
+        }
+    }
+
+    .sn {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
     &.side-left {
         & > .block-text {
-            width: 45%;
+            padding-right: 5%;
         }
 
         & > .block-img {
-            width: 45%;
+            width: 50%;
             position: relative;
-        }
+            text-align: right;
 
-        img {
-            max-height: 800px;
-            position: relative;
-            right: 30%;
+            img {
+                position: relative;
+                right: 10%;
+                width: auto;
+            }
         }
     }
 
     &.side-right {
         & > .block-text {
-            width: 40%;
+            padding-left: 5%;
         }
 
         & > .block-img {
-            width: 40%;
+            width: 50%;
             position: relative;
-        }
 
-        img {
-            position: relative;
-            left: 30%;
+            img {
+                position: relative;
+                left: 10%;
+                width: auto;
+            }
         }
     }
 }
@@ -505,7 +477,7 @@ a:active {
 
 #people {
     img {
-        height: 600px;
+        height: 520px;
     }
 }
 
@@ -752,6 +724,71 @@ a:active {
         }
     }
 }
+///////////////////////////////////////////////////////////////////////////
+
+.solutions {
+    #top {
+        height: auto;
+        background-image: url("../img/solutions-bg.jpg");
+        background-size: cover;
+
+        #video-elevated {
+            margin: 60px 20px 90px;
+
+            h1 {
+                font-size: 48px;
+            }
+        }
+
+        #integrated-solutions {
+            width: 100%;
+
+            & > div {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: stretch;
+
+                a {
+                    border-right: 1px solid rgba(255,255,255,0.35);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    width: 20%;
+
+                    p {
+                        color: #fff;
+                        font-size: 12px;
+                        width: 90%;
+                        margin-left: auto;
+                        margin-right: auto;
+                        margin-bottom: auto;
+                    }
+
+                    div.arrow {
+                        font-size: 40px;
+                        font-family: 'OpenSans Light';
+                    }
+
+                    &:last-child {
+                        border: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    #sn-network {
+        h1 {
+            color: #714EBD;
+        }
+
+        .block-img img {
+            height: 450px;
+        }
+    }
+}
+//////////////////////////////////////////////////////////////////////////////
 @media (max-width: 1200px) {
     #top {
         height: 610px;
