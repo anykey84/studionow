@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="libs/aos.css">
     <link rel="stylesheet" href="css/style.min.css">
-    <link href="//vjs.zencdn.net/5.8/video-js.min.css" rel="stylesheet">
+    <link href="libs/video-js/video-js.min.css" rel="stylesheet">
 </head>
 
 <body class="case-studies">
@@ -46,12 +46,74 @@
             </div>
         </header>
 
-        <div class="video-brands">
+        <div class="video-brands video-on-right">
           <div class="brand-box">
             <img src="img/akamai@2x.png" alt="">
             <div>
               <h4>A Trusted Video Content Partnership:</h4>
               <p>Akamai knew they needed a way to simplify the process while maintaining brand and quality standards.</p>
+            </div>
+            <div class="btn btn-transparent-blue">Read Full Case Study</div>
+          </div>
+          <div class="video-box">
+            <video id="my-video" class="video-js" controls preload="auto" width="640" height="264"
+               data-setup="{}">
+                <source src="video/reel.mp4" type='video/mp4'>
+                <p class="vjs-no-js">
+                  To view this video please enable JavaScript, and consider upgrading to a web browser that
+                  <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                </p>
+              </video>
+          </div>
+        </div>
+
+        <div class="video-brands video-on-left grey-background">
+          <div class="brand-box">
+            <img src="img/coca-cola@2x.png" alt="">
+            <div>
+              <h4>Redefining In-House Partnership At Coca-Cola:</h4>
+              <p>With more than 700,000 worldwide employees and 20 different billion-dollar brands within Coca-cola, communications require a delicate mix of precision and innovation.</p>
+            </div>
+            <div class="btn btn-transparent-blue">Read Full Case Study</div>
+          </div>
+          <div class="video-box">
+            <video id="my-video" class="video-js" controls preload="auto" width="640" height="264"
+               data-setup="{}">
+                <source src="video/reel.mp4" type='video/mp4'>
+                <p class="vjs-no-js">
+                  To view this video please enable JavaScript, and consider upgrading to a web browser that
+                  <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                </p>
+              </video>
+          </div>
+        </div>
+
+        <div class="video-brands video-on-right">
+          <div class="brand-box">
+            <img src="img/yp.png" alt="">
+            <div>
+              <h4>Setting a New Brand Standart for High-Volume Video Production</h4>
+              <p>YP required a custom, scalable solution to offer customers the ability to creativery showcase its businesses through video.</p>
+            </div>
+            <div class="btn btn-transparent-blue">Read Full Case Study</div>
+          </div>
+          <div class="video-box">
+            <video id="my-video" class="video-js" controls preload="auto" width="640" height="264"
+               data-setup="{}">
+                <source src="video/reel.mp4" type='video/mp4'>
+                <p class="vjs-no-js">
+                  To view this video please enable JavaScript, and consider upgrading to a web browser that
+                  <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                </p>
+              </video>
+          </div>
+        </div>
+        <div class="video-brands video-on-left  grey-background">
+          <div class="brand-box">
+            <img src="img/zillow@2x.png" alt="">
+            <div>
+              <h4>Setting a New Brand Standart for High-Volume Video Production:</h4>
+              <p>Zillow Group sought to launch a video program that would allow its agents to showcase themselves and their properties in a new way, through custom branding profile videos.</p>
             </div>
             <div class="btn btn-transparent-blue">Read Full Case Study</div>
           </div>
@@ -120,7 +182,7 @@
     <script src="libs/jquery/jquery.js"></script>
     <script src="libs/bootstrap/js/bootstrap.min.js"></script>
     <script src="libs/aos.js"></script>
-    <script src="//vjs.zencdn.net/5.8/video.min.js"></script>
+    <script src="libs/video-js/video.min.js"></script>
 
     <script src="app/app.js"></script>
     <script>

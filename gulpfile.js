@@ -58,6 +58,9 @@ gulp.task('libs', function() {
     gulp.src(bc + 'background-video/jquery.backgroundvideo.min.js')
         .pipe(gulp.dest('./builds/dist/libs/'));
 
+    gulp.src(bc + 'video.js/dist/**/*.*')
+        .pipe(gulp.dest('./builds/dist/libs/video-js/'));
+
 });
 
 gulp.task('webserver', function() {
