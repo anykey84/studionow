@@ -12,7 +12,7 @@ $(function() {
     //     "loop": true
     //   });
 
-    $('#integrated-solutions a').on('click', function() {
+    $('#integrated-solutions a, #video-gallery-button a').on('click', function() {
         scrollTo($(this).attr('href'));
     })
 
