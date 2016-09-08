@@ -278,6 +278,16 @@ a:visited {
         }
     }
 
+    #video-gallery-button {
+        padding: 10px 30px;
+        margin: 50px auto;
+
+        a {
+            font-size: 20px;
+            font-weight: 300;
+        }
+    }
+
     #video-elevated {
         h1 {
             font-size: 60px;
@@ -407,8 +417,8 @@ a:visited {
         }
     }
 
-    .block-img{
-      display: flex;
+    .block-img {
+        display: flex;
     }
 
     .sn {
@@ -422,8 +432,7 @@ a:visited {
         }
 
         & > .block-img {
-          justify-content: flex-end;
-
+            justify-content: flex-end;
             width: 50%;
             position: relative;
             text-align: right;
@@ -442,8 +451,7 @@ a:visited {
         }
 
         & > .block-img {
-          justify-content: flex-start;
-
+            justify-content: flex-start;
             width: 50%;
             position: relative;
 
@@ -786,14 +794,14 @@ a:visited {
         }
     }
 
-    .image-side{
-      .block-img{
-        width: 45%;
-      }
+    .image-side {
+        .block-img {
+            width: 45%;
+        }
 
-      .block-text{
-        width: 55%;
-      }
+        .block-text {
+            width: 55%;
+        }
     }
 
     #sn-network {
@@ -806,44 +814,65 @@ a:visited {
         }
     }
 
-    #sn-cloud{
-      h1{
-        color: #5356BD;
-      }
-      .block-img img {
-          height: 480px;
-      }
+    #sn-cloud {
+        h1 {
+            color: #5356BD;
+        }
+
+        .block-img img {
+            height: 480px;
+        }
     }
 
-    #sn-studios{
-      h1{
-        color: #0E61C2;
-      }
-      .block-img img {
-          height: 480px;
-      }
+    #sn-studios {
+        h1 {
+            color: #0E61C2;
+        }
+
+        .block-img img {
+            height: 480px;
+        }
     }
 
-    #sn-pro{
-      h1{
-        color: #0E92C2;
-      }
-      .block-img img {
-          height: 480px;
-      }
+    #sn-pro {
+        h1 {
+            color: #0E92C2;
+        }
+
+        .block-img img {
+            height: 480px;
+        }
     }
 
-    #sn-producers{
-      h1{
-        color: #0EB1C2;
-      }
-      .block-img img {
-          height: 480px;
-      }
+    #sn-producers {
+        h1 {
+            color: #0EB1C2;
+        }
+
+        .block-img img {
+            height: 480px;
+        }
     }
 
-    #made-easy{
-      padding: 80px 0;
+    #made-easy {
+        padding: 80px 0;
+    }
+}
+//////////////////////////////////////////////////////////////////////////////
+
+.case-studies {
+    #top {
+        background-image: url("../img/solutions-bg.jpg");
+        background-size: cover;
+        height: auto;
+
+        & > div > div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: stretch;
+            height: 100%;
+        }
     }
 }
 //////////////////////////////////////////////////////////////////////////////
