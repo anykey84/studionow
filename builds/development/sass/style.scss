@@ -778,6 +778,16 @@ a:visited {
         }
     }
 
+    .image-side{
+      .block-img{
+        width: 45%;
+      }
+
+      .block-text{
+        width: 55%;
+      }
+    }
+
     #sn-network {
         h1 {
             color: #714EBD;
@@ -791,6 +801,15 @@ a:visited {
     #sn-cloud{
       h1{
         color: #5356BD;
+      }
+      .block-img img {
+          height: 480px;
+      }
+    }
+
+    #sn-studios{
+      h1{
+        color: #0E61C2;
       }
       .block-img img {
           height: 480px;
