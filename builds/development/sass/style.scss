@@ -39,7 +39,9 @@
     font-style: normal;
 }
 
-html, body, .container {
+.container,
+body,
+html {
     height: 100%;
 }
 
@@ -999,40 +1001,71 @@ a:visited {
 }
 //////////////////////////////////////////////////////////////////////////////
 
-.login{
-  display: flex;
-  background-image: url(../img/login-background.jpg);
-  background-size: cover;
-  .login-form{
-    margin: auto;
-    background-color: #fff;
-    border: 1ps solid #000;
-    padding: 30px 20px;
-    border-radius: 6px;
-    text-align: center;
-    width: 250px;
-    img{
-      width: 190px;
-    }
-    h1{
-      font-family: 'Gotham Book';
-      font-size: 16px;
-      margin: 10px 0;
-    }
-    form{
-      text-align: left;
-      input[type=email], input[type=password]{
-        height: 30px;
-        font-size: 14px;
-        border-radius: 3px;
-      }
-      input[type=submit]{
-        font-family: 'Gotham Bold';
-      }
-    }
-  }
-}
+.login {
+    display: flex;
+    background-image: url("../img/login-background.jpg");
+    background-size: cover;
 
+    & > div {
+        margin: auto;
+        width: 250px;
+
+        .login-form {
+            background-color: #fff;
+            border: 1ps solid #000;
+            padding: 30px 20px 15px;
+            border-radius: 6px;
+            text-align: center;
+
+            img {
+                width: 190px;
+            }
+
+            h1 {
+                font-family: 'Gotham Book';
+                font-size: 16px;
+                margin: 10px 0;
+            }
+
+            form {
+                text-align: left;
+
+                input[type=email],
+                input[type=password] {
+                    height: 30px;
+                    font-size: 14px;
+                    border-radius: 3px;
+                }
+
+                input[type=submit] {
+                    font-family: 'Gotham Bold';
+                }
+            }
+
+            .legacy {
+                font-size: 11px;
+                font-family: "Gotham Book";
+                color: #48C4DC;
+                margin-top: 10px;
+                display: block;
+            }
+        }
+        .sign-up{
+          text-align: center;
+          margin-top: 15px;
+          p{
+            color: #fff;
+            font-family: 'OpenSans Semibold';
+            margin-bottom: 5px;
+          }
+          a{
+            display: block;
+            font-family: "Gotham Bold";
+            color: #48C4DC;
+          }
+        }
+    }
+}
 //////////////////////////////////////////////////////////////////////////////
 @media (max-width: 1200px) {
     #top {
