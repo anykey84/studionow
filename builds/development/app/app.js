@@ -12,6 +12,8 @@ $(function() {
     //     "loop": true
     //   });
 
+    AOS.init();
+
     $('#integrated-solutions a, #video-gallery-button a').on('click', function() {
         scrollTo($(this).attr('href'));
     })
