@@ -903,33 +903,68 @@ a:visited {
             justify-content: space-around;
             align-items: stretch;
             height: 100%;
-
         }
-
-        #video-elevated{
-          h1 {
-              margin-top: 50px;
-              font-size: 54px;
-          }
-          h2 {
-              font-family: 'OpenSansLight Italic';
-              font-size: 24px;
-          }
-        }
-
-        #video-gallery-button{
-          background-color: #fff;
-          margin-bottom: 100px;
-          a{
-            color: rgb(89,0,116);
-            font-family: "Gotham Bold";
-          }
-          &:hover{
-            background-color: transparent;
-            a{
-              color: #fff;
+        #video-elevated {
+            h1 {
+                margin-top: 50px;
+                font-size: 54px;
             }
-          }
+            h2 {
+                font-family: 'OpenSansLight Italic';
+                font-size: 24px;
+            }
+        }
+        #video-gallery-button {
+            background-color: #fff;
+            margin-bottom: 100px;
+            a {
+                color: rgb(89,0,116);
+                font-family: "Gotham Bold";
+            }
+            &:hover {
+                background-color: transparent;
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    #call-us {
+      padding-top: 50px;
+      padding-bottom: 100px;
+      & > h2{
+        font-size: 50px;
+      }
+      & > h3{
+        font-size: 20px;
+      }
+        & > img {
+            width: 82px;
+            height: 64px;
+            margin: 50px;
+        }
+        .cities {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            & > div {
+                text-align: left;
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+                &:nth-child(2) {
+                    margin: 0 3%;
+                }
+                h4{
+                  font-family: 'Gotham Bold', sans-serif;
+                }
+                p{
+                  font-family: 'OpenSans Semibold', sans-serif;
+                  font-size: 12px;
+                }
+            }
         }
     }
 }
