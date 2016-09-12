@@ -45,6 +45,13 @@
     font-weight: 300;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Gotham Medium';
+    src: url('../fonts/Gotham-Medium.eot');
+    src: url('../fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/Gotham-Medium.woff') format('woff'), url('../fonts/Gotham-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
 
 .container,
 body,
@@ -308,11 +315,13 @@ a:visited {
         h1 {
             font-size: 60px;
             color: #fff;
+            font-family: "Gotham Light", sans-serif;
         }
 
         h2 {
             font-size: 20px;
             color: #fff;
+            font-family: "Gotham Medium", sans-serif;
         }
     }
 
@@ -485,13 +494,16 @@ a:visited {
 
     h1 {
         color: #25737C;
-        font-size: 52px;
+        font-size: 38px;
+        font-family: "Gotham Book", sans-serif;
     }
 
     p {
         width: 80%;
-        font-size: 22px;
+        font-size: 18px;
         margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -863,7 +875,7 @@ a:visited {
 
 #video-modal {
     .video-box {
-        min-height: 300px;
+        min-height: 350px;
         height: 1px;
     }
 
@@ -1203,10 +1215,19 @@ a:visited {
         }
     }
 
+    #refreshing {
+        padding: 100px 3%;
+    }
+
+    .image-side h1 {
+        font-size: 38px;
+    }
+
     #feedback .row > div:last-child {
         padding: 0 2%;
     }
 }
+//////////////////////////////////////////////////////////////////////////
 @media (max-width: 992px) {
     #top {
         #top-row {
@@ -1219,8 +1240,7 @@ a:visited {
     }
 
     .image-side {
-        flex-direction: column;
-
+        //flex-direction: column;
         &.side-right {
             img {
                 left: inherit;
@@ -1229,13 +1249,17 @@ a:visited {
             & > .block-text {
                 width: 95%;
                 text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 0;
             }
 
             & > .block-img {
-                width: 100%;
-                position: relative;
-                text-align: center;
-                margin-top: 50px;
+                // width: 100%;
+                // position: relative;
+                // text-align: center;
+                // margin-top: 50px;
+                display: none;
 
                 img {
                     position: relative;
@@ -1251,19 +1275,28 @@ a:visited {
             & > .block-text {
                 width: 95%;
                 text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 0;
             }
 
             & > .block-img {
-                width: 100%;
-                position: relative;
-                text-align: center;
-                margin-top: 50px;
+                // width: 100%;
+                // position: relative;
+                // text-align: center;
+                // margin-top: 50px;
+                display: none;
 
                 img {
                     position: relative;
                 }
             }
         }
+    }
+
+    #brands > div > div img {
+        max-width: 80%;
+        max-height: 80%;
     }
 
     #table img {
@@ -1303,4 +1336,8 @@ a:visited {
         padding: 0 40px;
     }
 }
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    .block-img {
+        display: none;
+    }
+}
