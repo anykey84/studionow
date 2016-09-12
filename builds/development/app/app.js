@@ -18,6 +18,14 @@ $(function() {
         scrollTo($(this).attr('href'));
     })
 
+    $('#watch-highlight-reel').on('click', function() {
+        $('#video-modal').modal();
+        videojs("my-video").play();
+        $('#video-modal').on('hide.bs.modal', function(e) {
+            videojs("my-video").pause();
+        })
+    })
+
     function scrollTo(element) {
 
         var offset = 0;
