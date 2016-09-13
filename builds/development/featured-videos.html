@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+
+<head lang="ru-RU">
+    <meta charset="UTF-8">
+    <title>Studionow</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="libs/aos.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link href="libs/video-js/video-js.min.css" rel="stylesheet">
+</head>
+
+<body class="featured-videos">
+    <div class="container-fluid">
+
+        <header id="top">
+
+            <div>
+                <div>
+
+                    <div class="row" id="top-row">
+                        <div id="top-logo" class="col-sm-3 col-md-3 col-lg-4 text-left">
+                            <a href="index.html"><img src="img/Studionow-Logo-Header@3x.svg" alt="Studionow Logo" /></a>
+                        </div>
+                        <div class="col-sm-9 col-md-9 col-lg-8 text-right">
+                            <ul id="top-menu">
+                                <li><a href="solutions.html">Solutions</a></li>
+                                <li class="active"><a href="case-studies.html">Case Studies</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="login.html">Log In</a></li>
+                                <li class="get-started"><a href="#">Get Started</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="back"><a href="case-studies.html"><i class="fa fa-angle-left" aria-hidden="true"></i> Back to Case Studies</a></div>
+                    <div id="top-video">
+                      <div class="left-text">
+                        <img src="img/Case-Study-Zillow-Logo@2x.png" alt="">
+                        <p>Setting a new brand standart for high-volume video production</p>
+                      </div>
+                      <div class="right-video">
+                        <video id="my-video" class="video-js" controls preload="metadata" data-setup="{}">
+                          <source src="video/reel.mp4" type="video/mp4">
+                          <p class="vjs-no-js">
+                            To view this video please enable JavaScript, and consider upgrading to a web browser that
+                            <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                          </p>
+                        </video>
+                      </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+
+
+        <div id="feedback" class="grey-background">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Let's make some videos together</h1>
+                    <p>Put a stop to the insanity before it even begins. You need video. We know video. Time to drop us a line!</p>
+                    <img src="img/empty2.png" alt="">
+
+                </div>
+                <div class="col-md-6">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#panel1">I need videos</a></li>
+                        <li><a data-toggle="tab" href="#panel2">I make videos</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="panel1" class="tab-pane fade in active">
+                            <img src="img/empty1.png" alt="">
+                            <form>
+                                <div class="form-group">
+                                    <label for="fullname">Full name:</label>
+                                    <input type="text" id="fullname" name="fullname" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phonenumber">Phone number:</label>
+                                    <input type="number" class="form-control" id="phonenumber" name="phonenumber">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email:</label>
+                                    <input type="email" class="form-control" id="email" name="email">
+                                </div>
+                                <div class="form-group text-right">
+                                    <input type="submit" name="name" class="btn btn-info" value="Submit">
+                                </div>
+                            </form>
+                        </div>
+                        <div id="panel2" class="tab-pane fade">
+                            <h3>РџР°РЅРµР»СЊ 2</h3>
+                            <p>РЎРѕРґРµСЂР¶РёРјРѕРµ 2 РїР°РЅРµР»Рё...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer></footer>
+    </div>
+    <!-- Others JS Files -->
+    <script src="libs/jquery/jquery.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="libs/aos.js"></script>
+    <script src="libs/video-js/video.min.js"></script>
+
+    <script src="app/app.js"></script>
+</body>
+
+</html>
