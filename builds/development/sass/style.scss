@@ -659,8 +659,9 @@ a:visited {
                     margin-top: 0;
                     text-align: left;
                 }
-                p{
-                  text-align: left;
+
+                p {
+                    text-align: left;
                 }
             }
         }
@@ -873,6 +874,27 @@ a:visited {
         color: #25737C;
         font-size: 60px;
     }
+}
+
+footer{
+  background-color: #000;
+  color: #fff;
+  padding: 50px 5%;
+  img{
+    width: 200px;
+    margin-bottom: 30px;
+  }
+  ul{
+    padding: 0;
+    margin: 0 0 50px 0;
+    list-style: none;
+    li{
+      line-height: 30px;
+    }
+  }
+  p{
+    color: #fff;
+  }
 }
 
 #video-modal {
@@ -1578,9 +1600,9 @@ a:visited {
         }
     }
 
-#made-easy>div>div{
-  flex-basis: 100%;
-}
+    #made-easy > div > div {
+        flex-basis: 100%;
+    }
 
     #video-modal {
         .modal-dialog {
