@@ -16,19 +16,19 @@ $(function() {
 
     $('#integrated-solutions a, #video-gallery-button a').on('click', function() {
         scrollTo($(this).attr('href'));
-    })
+    });
 
     $('#watch-highlight-reel').on('click', function() {
         $('#video-modal').modal();
         videojs("my-video").play();
         $('#video-modal').on('hide.bs.modal', function(e) {
             videojs("my-video").pause();
-        })
-    })
+        });
+    });
 
     $('#top .navbar-toggle').on('click', function(){
-      $('#top-menu').slideToggle();
-    })
+      $('#top-menu').toggleClass('hidden-xs');
+    });
 
     function scrollTo(element) {
 
@@ -45,4 +45,4 @@ $(function() {
     }
 
 
-})
+});
