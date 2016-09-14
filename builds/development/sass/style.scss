@@ -213,6 +213,15 @@ a:visited {
     color: #fff;
     display: flex;
 
+    & > .navbar-toggle {
+        position: absolute;
+        z-index: 1;
+
+        & > span {
+            background-color: #fff;
+        }
+    }
+
     & > div {
         height: 100%;
         width: 100%;
@@ -1142,7 +1151,6 @@ a:visited {
                     text-align: left;
                     flex-basis: 32%;
                     //width: 30%;
-
                     .video-box {
                         & > div {
                             min-height: 250px;
@@ -1463,5 +1471,78 @@ a:visited {
 @media (max-width: 768px) {
     .block-img {
         display: none;
+    }
+
+    .sn {
+        display: none;
+    }
+
+    #top {
+        #top-row #top-logo {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        #top-menu {
+            position: absolute;
+            top: 5px;
+            left: -5px;
+            padding: 0;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+
+            li {
+                text-align: left;
+
+                a {
+                    color: #000;
+                }
+            }
+        }
+
+        #watch-highlight-reel {
+            padding: 30px;
+
+            a {
+                font-size: 37px;
+
+                .fa {
+                    font-size: 80px;
+                    opacity: 0.5;
+                }
+            }
+        }
+
+        #video-elevated h2 {
+            padding: 24px 14%;
+            font-size: 18px;
+        }
+
+        #integrated-solutions {
+          h3{
+            font-size: 16px;
+          }
+            & > div {
+                display: flex;
+                justify-content: space-between;
+
+                & > a {
+                    padding: 0 1%;
+                    display: block;
+                    flex-basis: 20%;
+                    flex-shrink: 1;
+
+                    img {
+                        width: 100%;
+                    }
+
+                    .lead {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
     }
 }

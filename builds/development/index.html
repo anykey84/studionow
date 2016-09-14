@@ -14,6 +14,13 @@
     <div class="container-fluid">
 
         <header id="top">
+            <button type="button" class="navbar-toggle hidden-sm hidden-md hidden-xl">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
             <video id="video_background" preload="auto" autoplay="autoplay" loop="true" source src="video/reel.mp4" type="video/mp4">
               bgvideo
             </video>
@@ -26,7 +33,7 @@
                             <a href="index.html"><img src="img/Studionow-Logo-Header@3x.svg" alt="Studionow Logo" /></a>
                         </div>
                         <div class="col-sm-9 col-md-9 col-lg-8 text-right">
-                            <ul id="top-menu">
+                            <ul id="top-menu" style="display: none">
                                 <li><a href="solutions.html">Solutions</a></li>
                                 <li><a href="case-studies.html">Case Studies</a></li>
                                 <li><a href="contact.html">Contact</a></li>
@@ -37,11 +44,12 @@
                     </div>
                     <div class="row text-center">
                         <div class="btn btn-transparent" id="watch-highlight-reel">
-                            <a href="#">Watch Highlight Reel <i class="fa fa-play-circle" aria-hidden="true"></i></a>
+                            <a class="hidden-xs" href="#">Watch Highlight Reel <i class="fa fa-play-circle" aria-hidden="true"></i></a>
+                            <a class="hidden-sm hidden-md hidden-xl" href="#"><i class="fa fa-play-circle" aria-hidden="true"></i><br/>Video elevated</a>
                         </div>
                     </div>
-                    <div class="row text-center" id="video-elevated">
-                        <h1>Video elevated</h1>
+                    <div class="row text-center " id="video-elevated">
+                        <h1 class="hidden-xs">Video elevated</h1>
                         <h2>The network, technology, and people to hardness the creative power of video</h2>
                     </div>
                     <div class="row text-center" id="integrated-solutions">
@@ -94,7 +102,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="row" id="top-overlay">
+                    <div class="row hidden-xs" id="top-overlay">
                         <div>
                             We elevate video for the worlds top brands
                         </div>

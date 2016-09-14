@@ -26,6 +26,10 @@ $(function() {
         })
     })
 
+    $('#top .navbar-toggle').on('click', function(){
+      $('#top-menu').slideToggle();
+    })
+
     function scrollTo(element) {
 
         var offset = 0;
