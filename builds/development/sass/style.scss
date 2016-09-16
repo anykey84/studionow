@@ -876,28 +876,33 @@ a:visited {
     }
 }
 
-footer{
-  background-color: #000;
-  color: #fff;
-  padding: 50px 5%;
-  img{
-    width: 200px;
-    margin-bottom: 30px;
-  }
-  ul{
-    padding: 0;
-    margin: 0 0 50px 0;
-    list-style: none;
-    li{
-      line-height: 30px;
-      a{
-        color: #fff;
-      }
-    }
-  }
-  p{
+footer {
+    background-color: #000;
     color: #fff;
-  }
+    padding: 50px 5%;
+
+    img {
+        width: 200px;
+        margin-bottom: 30px;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0 0 50px;
+        list-style: none;
+
+        li {
+            line-height: 30px;
+
+            a {
+                color: #fff;
+            }
+        }
+    }
+
+    p {
+        color: #fff;
+    }
 }
 
 #video-modal {
@@ -1364,6 +1369,50 @@ footer{
         }
     }
 
+    .featured-videos .content {
+        padding: 30px 2%;
+    }
+
+    .featured-videos {
+        #top #top-video {
+            align-items: center;
+
+            .left-text p {
+                font-size: 22px;
+            }
+        }
+
+        .content {
+            #text-sections {
+                flex-basis: 70%;
+
+                div.lead {
+                    font-size: 40px;
+                    line-height: 60px;
+                }
+
+                .featured-videos {
+                    flex-direction: column;
+
+                    .featured-video {
+                        flex-basis: inherit;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+
+            #topline-stats {
+                flex-basis: 30%;
+
+                img {
+                    margin-bottom: 30px;
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+        }
+    }
+
     #refreshing {
         padding: 100px 3%;
     }
@@ -1625,21 +1674,35 @@ footer{
     }
 
     .case-studies {
+        .video-brands {
+            padding: 30px 0;
 
-        .video-brands{
-          padding: 30px 0;
-          .video-box{
-            display: none;
-          }
-          .brand-box{
-            width: 100%;
-          }
+            .video-box {
+                display: none;
+            }
+
+            .brand-box {
+                width: 100%;
+            }
         }
-        #featured-videos{
-          .featured-video{
-            width: 100%;
-          }
+
+        #featured-videos {
+            .featured-video {
+                width: 100%;
+            }
         }
     }
-
+    .featured-videos .content{
+      flex-direction: column;
+      #topline-stats{
+        display: flex;
+        justify-content: space-between;
+        padding-right: 0;
+        img{
+          flex-basis: 32%;
+          width: 32%;
+          height: 32%;
+        }
+      }
+    }
 }
