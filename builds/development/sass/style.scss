@@ -1059,20 +1059,6 @@ footer{
             height: 100%;
         }
     }
-    .video-brands{
-      padding: 30px 0;
-      .video-box{
-        display: none;
-      }
-      .brand-box{
-        width: 100%;
-      }
-    }
-    #featured-videos{
-      .featured-video{
-        width: 100%;
-      }
-    }
 }
 //////////////////////////////////////////////////////////////////////////////
 
@@ -1637,4 +1623,23 @@ footer{
             min-height: 300px;
         }
     }
+
+    .case-studies {
+
+        .video-brands{
+          padding: 30px 0;
+          .video-box{
+            display: none;
+          }
+          .brand-box{
+            width: 100%;
+          }
+        }
+        #featured-videos{
+          .featured-video{
+            width: 100%;
+          }
+        }
+    }
+
 }
