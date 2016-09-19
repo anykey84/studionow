@@ -10,7 +10,7 @@
     <link href="libs/video-js/video-js.min.css" rel="stylesheet">
 </head>
 
-<body class="case-studies">
+<body class="featured-videos">
     <div class="container-fluid">
 
         <header id="top">
@@ -23,7 +23,6 @@
 
             <div>
                 <div>
-
                     <div class="row" id="top-row">
                         <div id="top-logo" class="col-sm-3 col-md-3 col-lg-4 text-left">
                             <a href="index.html"><img src="img/Studionow-Logo-Header@3x.svg" alt="Studionow Logo" /></a>
@@ -31,34 +30,94 @@
                         <div class="col-sm-9 col-md-9 col-lg-8 text-right">
                           <ul id="top-menu" class="hidden-xs">
                                 <li><a href="solutions.html">Solutions</a></li>
-                                <li class="active"><a href="#">Case Studies</a></li>
+                                <li class="active"><a href="case-studies.html">Case Studies</a></li>
                                 <li><a href="contact.html">Contact</a></li>
                                 <li><a href="login.html">Log In</a></li>
                                 <li class="get-started"><a href="#">Get Started</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="row text-center" id="video-elevated">
-                        <h1>Our way works.</h1>
-                        <h2>When it comes to video, we know our stuff. Check out these success stories from some of proud partners.</h2>
+                    <div class="back"><a href="case-studies.html"><i class="fa fa-angle-left" aria-hidden="true"></i> Back to Case Studies</a></div>
+                    <div id="top-video">
+                      <div class="left-text">
+                        <img src="img/Case-Study-Zillow-Logo@2x.png" alt="">
+                        <p>Setting a new brand standart for high-volume video production</p>
+                      </div>
+                      <div class="right-video">
+                        <video id="my-video" class="video-js" controls preload="metadata" data-setup="{}">
+                          <source src="video/reel.mp4" type="video/mp4">
+                          <p class="vjs-no-js">
+                            To view this video please enable JavaScript, and consider upgrading to a web browser that
+                            <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                          </p>
+                        </video>
+                      </div>
                     </div>
-                    <div class="row text-center">
-                        <div class="btn btn-transparent" id="video-gallery-button">
-                            <a href="#">Jump to our Featured Videos Gallery</a>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </header>
 
+        <div class="content">
+          <div id="topline-stats">
+            <img src="img/topline-stat.png" alt="">
+            <img src="img/topline-stat.png" alt="">
+            <img src="img/topline-stat.png" alt="">
+          </div>
+          <div id="text-sections">
+            <div class="lead">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes
+            </div>
+            <section>
+              <h2>Section title</h2>
+              <p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. </p>
+            </section>
+            <section>
+              <h2>Section title</h2>
+              <p>Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. </p>
+            </section>
+            <div class="featured-videos">
+              <div class="featured-video">
+                  <div class="video-box">
+                      <video id="featured1-video" class="video-js" controls preload="metadata" width="640" height="264" data-setup="{}">
+                    <source src="video/reel.mp4" type="video/mp4">
+                    <p class="vjs-no-js">
+                      To view this video please enable JavaScript, and consider upgrading to a web browser that
+                      <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                    </p>
+                  </video>
+                  </div>
 
-
-        <div id="made-easy" class="white-background">
-            <h1>We Are Video, <span>Made Easy</span></h1>
-            <h2>Get started today and hardness the power of video</h2>
-
+              </div>
+              <div class="featured-video">
+                  <div class="video-box">
+                      <video id="featured2-video" class="video-js" controls preload="metadata" width="640" height="264" data-setup="{}">
+                    <source src="video/reel.mp4" type="video/mp4">
+                    <p class="vjs-no-js">
+                      To view this video please enable JavaScript, and consider upgrading to a web browser that
+                      <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                    </p>
+                  </video>
+                  </div>
+              </div>
+              <div class="featured-video">
+                  <div class="video-box">
+                      <video id="featured3-video" class="video-js" controls preload="metadata" width="640" height="264" data-setup="{}">
+                    <source src="video/reel.mp4" type="video/mp4">
+                    <p class="vjs-no-js">
+                      To view this video please enable JavaScript, and consider upgrading to a web browser that
+                      <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                    </p>
+                  </video>
+                  </div>
+              </div>
+            </div>
+            <section>
+              <h2>Section title</h2>
+              <p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. </p>
+            </section>
+          </div>
         </div>
+
         <div id="feedback" class="grey-background">
             <div class="row">
                 <div class="col-md-6">
