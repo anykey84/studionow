@@ -1189,6 +1189,8 @@ footer {
     display: flex;
     background-image: url("../img/login-background.jpg");
     background-size: cover;
+    font-family: 'Gotham Light',’OpenSans Light’,sans-serif;
+    font-size: 13px;
 
     & > div {
         margin: auto;
@@ -1241,7 +1243,7 @@ footer {
 
             p {
                 color: #fff;
-                font-family: 'OpenSans Semibold';
+                font-family: 'Gotham Light';
                 margin-bottom: 5px;
             }
 
@@ -1692,17 +1694,20 @@ footer {
             }
         }
     }
-    .featured-videos .content{
-      flex-direction: column;
-      #topline-stats{
-        display: flex;
-        justify-content: space-between;
-        padding-right: 0;
-        img{
-          flex-basis: 32%;
-          width: 32%;
-          height: 32%;
+
+    .featured-videos .content {
+        flex-direction: column;
+
+        #topline-stats {
+            display: flex;
+            justify-content: space-between;
+            padding-right: 0;
+
+            img {
+                flex-basis: 32%;
+                width: 32%;
+                height: 32%;
+            }
         }
-      }
     }
 }
