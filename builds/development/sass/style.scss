@@ -670,6 +670,39 @@ a:visited {
 
 #feedback {
     padding: 80px 0;
+    position: relative;
+
+    .overlay {
+        top: 0;
+        left: 0;
+        z-index: 10;
+        opacity: 1;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-content: space-around;
+
+        .thanks {
+          border: 1px solid;
+          margin: auto;
+          background-color: #fff;
+          padding: 5%;
+          opacity: 1;
+            p {
+                // margin: auto;
+                font-size: 40px;
+                color: #000;
+            }
+
+            button {
+                // margin: auto;
+            }
+        }
+    }
+
+    .tab-content {
+        position: relative;
+    }
 
     .row {
         & > div:first-child {
