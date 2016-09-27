@@ -20,6 +20,7 @@ $(function() {
 
     $('#watch-highlight-reel').on('click', function() {
         $('#video-modal').modal();
+        $('#video-modal').css('display', 'flex');
         videojs("my-video").play();
         $('#video-modal').on('hide.bs.modal', function(e) {
             videojs("my-video").pause();
@@ -29,6 +30,8 @@ $(function() {
     $('#top .navbar-toggle').on('click', function(){
       $('#top-menu').toggleClass('hidden-xs');
     });
+
+    $(".video-box").fitVids();
 
     function scrollTo(element) {
 
