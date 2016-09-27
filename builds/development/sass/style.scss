@@ -1698,6 +1698,9 @@ a:visited {
     #feedback .row > div:last-child {
         padding: 0 2%;
     }
+    .tabs>label{
+      flex-basis: 30%;
+    }
 }
 //////////////////////////////////////////////////////////////////////////
 @media (max-width: 992px) {
