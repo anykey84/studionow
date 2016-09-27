@@ -31,8 +31,6 @@ $(function() {
       $('#top-menu').toggleClass('hidden-xs');
     });
 
-    $(".video-box").fitVids();
-
     function scrollTo(element) {
 
         var offset = 0;

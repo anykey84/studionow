@@ -944,7 +944,7 @@ a:visited {
     }
 
     .row {
-        margin: 40px 6% 0;
+        margin: 40px 6% -100px;
 
         & > div {
             //padding-right: 60px;
@@ -1607,6 +1607,16 @@ a:visited {
     }
 }
 //////////////////////////////////////////////////////////////////////////////
+
+@media (min-width: 1500px) {
+  .image-side.side-right>.block-img img{
+    margin-left: 14%;
+  }
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+
 @media (max-width: 1200px) {
     #top {
         height: 610px;
