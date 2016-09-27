@@ -43,11 +43,13 @@ $(function() {
         }, speed);
     }
 
-    $('#feedback form').on('submit', function(e) {
+    $('.tabs form').on('submit', function(e) {
       e.preventDefault();
-      $('#feedback .tab-content > div').append('<div class="overlay" style="display: flex"><div class="thanks"><p>Thanks!</p><button class="btn btn-default btn-block">Ok</button></div></div>')
-      $('#feedback .thanks button').on('click', function() {
-        $('#feedback .overlay').hide();
+      var form = $(this);
+      form.css('opacity', '.5').parent().append('<div class="overlay" style="display: flex"><div class="thanks"><p>Thanks!</p><button class="btn btn-default btn-block">Ok</button></div></div>')
+      $('.tabs .thanks button').on('click', function() {
+        $('.tabs .overlay').hide();
+        form.css('opacity', '1');
       })
     })
 

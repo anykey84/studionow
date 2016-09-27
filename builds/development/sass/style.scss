@@ -944,7 +944,7 @@ a:visited {
     }
 
     .row {
-        margin: 40px 6% -100px;
+        margin: 40px 6% -75px;
 
         & > div {
             //padding-right: 60px;
@@ -964,8 +964,14 @@ a:visited {
                 margin: 20px 0;
             }
 
-            p {
+            & > p {
                 font-size: 20px;
+                line-height: 40px;
+            }
+
+            & > ul > li {
+                font-size: 20px;
+                line-height: 40px;
             }
 
             hr {
@@ -1005,9 +1011,14 @@ a:visited {
                 background-color: #0EB1C2;
                 color: #fff;
                 font-size: 26px;
-                margin-top: 30px;
+                margin: 30px 0;
                 font-family: 'Gotham Book';
                 border-radius: 10px;
+            }
+
+            .small {
+                font-family: 'OpenSans Light', sans-serif;
+                max-width: 400px;
             }
         }
     }
@@ -1127,7 +1138,7 @@ a:visited {
 .footer {
     background-color: #000;
     color: #fff;
-    padding: 80px 8%;
+    padding: 50px 8%;
 
     img {
         width: 200px;
@@ -1607,16 +1618,12 @@ a:visited {
     }
 }
 //////////////////////////////////////////////////////////////////////////////
-
 @media (min-width: 1500px) {
-  .image-side.side-right>.block-img img{
-    margin-left: 14%;
-  }
+    .image-side.side-right > .block-img img {
+        margin-left: 14%;
+    }
 }
-
-
 ///////////////////////////////////////////////////////////////////////////////
-
 @media (max-width: 1200px) {
     #top {
         height: 610px;
@@ -1800,6 +1807,10 @@ a:visited {
     #feedback .row .tab-content {
         padding: 0 40px;
     }
+
+    .tabs .row {
+        margin-bottom: 0;
+    }
 }
 /////////////////////////////////////////////////////////////////////
 @media (max-width: 768px) {
@@ -1854,6 +1865,10 @@ a:visited {
             font-size: 18px;
         }
 
+        #video-elevated h1 {
+            font-size: 58px;
+        }
+
         #integrated-solutions {
             h3 {
                 font-size: 16px;
@@ -1878,6 +1893,10 @@ a:visited {
                     }
                 }
             }
+        }
+
+        #video-gallery-button a {
+            font-size: 14px;
         }
     }
 
@@ -1921,6 +1940,11 @@ a:visited {
 
     #made-easy > div > div {
         flex-basis: 100%;
+    }
+
+    .video-brands .brand-box img {
+        max-width: 100%;
+        height: auto;
     }
 
     #video-modal {
@@ -1973,5 +1997,17 @@ a:visited {
                 height: 32%;
             }
         }
+    }
+
+    #magic > div > div .lead {
+        font-size: 20px;
+    }
+
+    .tabs>label{
+      flex-basis: 50%;
+    }
+
+    .solutions #top #integrated-solutions>div a p{
+      display: none;
     }
 }
