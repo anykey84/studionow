@@ -46,11 +46,12 @@ $(function() {
     $('.tabs form').on('submit', function(e) {
       e.preventDefault();
       var form = $(this);
-      form.css('opacity', '.5').parent().append('<div class="overlay" style="display: flex"><div class="thanks"><p>Thanks!</p><button class="btn btn-default btn-block">Ok</button></div></div>')
+      form.parent().append('<div class="overlay" style="display: flex"><div class="thanks"><p>Thanks!</p><button class="btn btn-default btn-block">Ok</button></div></div>')
       $('.tabs .thanks button').on('click', function() {
         $('.tabs .overlay').hide();
-        form.css('opacity', '1');
       })
     })
+
+    $('input[name=phonenumber]').mask('(999)-999-9999');
 
 });
