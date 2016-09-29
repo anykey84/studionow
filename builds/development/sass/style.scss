@@ -424,11 +424,23 @@ a:visited {
         height: 180px;
         vertical-align: middle;
         display: flex;
+        flex-basis: 19.94%;
+        width: 20%;
+        -ms-flex: 1 auto;
+        flex-direction: column;
+        justify-content: center;
 
-        img {
-            margin: auto;
-            max-width: 62%;
-            max-height: 62%;
+        & > div{
+          padding: 10%;
+          max-width: 100%;
+          text-align: center;
+          img {
+              margin: auto;
+              max-width: 100%;
+              max-height: 100%;
+              width: auto;
+              height: auto;
+          }
         }
     }
 }
@@ -2014,5 +2026,22 @@ a:visited {
 
     .solutions #top #integrated-solutions>div a p{
       display: none;
+    }
+}
+
+
+/////////////////////////////////////////////////////////////////////////////
+///////////////////////  ///////////           //////////////////////////////
+///////////////////////  ///////////  ///////////////////////////////////////
+///////////////////////  ///////////           //////////////////////////////
+///////////////////////  ///////////  ///////////////////////////////////////
+///////////////////////  ///////////           //////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+
+@media screen and (min-width:0\0) {
+    #brands{
+      & > div{
+
+      }
     }
 }
