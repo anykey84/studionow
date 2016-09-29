@@ -682,6 +682,7 @@ a:visited {
             padding: 66px;
             width: 50%;
             display: flex;
+            -ms-flex: 1 1 auto;
 
             &:last-child {
                 border-right: 1px solid #E1E1E1;
@@ -693,6 +694,7 @@ a:visited {
                 justify-content: flex-start;
                 align-items: center;
                 align-items: flex-start;
+                -ms-flex: 1 1 auto
 
                 img {
                     width: 94px;

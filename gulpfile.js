@@ -24,7 +24,7 @@ gulp.task('sass', function() {
     gulp.src('builds/development/sass/**/*')
         .pipe(sass())
         .pipe(autoprefixer({
-            browsers: ['last 5 versions'],
+            browsers: ['last 3 versions'],
             cascade: false
         }))
         .pipe(concat('style.min.css'))
