@@ -4,7 +4,8 @@ var gulp = require('gulp'),
     webserver = require('gulp-webserver'),
     sass = require('gulp-sass'),
     concat = require('gulp-concat'),
-    csso = require('gulp-csso');
+    csso = require('gulp-csso'),
+    autoprefixer = require('gulp-autoprefixer');
 
 var bc = './bower_components/';
 
@@ -22,6 +23,10 @@ gulp.task('html', function() {
 gulp.task('sass', function() {
     gulp.src('builds/development/sass/**/*')
         .pipe(sass())
+        .pipe(autoprefixer({
+            browsers: ['last 5 versions'],
+            cascade: false
+        }))
         .pipe(concat('style.min.css'))
         .pipe(csso())
         .pipe(gulp.dest('builds/dist/css/'));
