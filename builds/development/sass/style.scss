@@ -1471,13 +1471,15 @@ a:visited {
 
 .login {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-image: url("../img/login-background.jpg");
     background-size: cover;
     font-family: 'Gotham Light',’OpenSans Light’,sans-serif;
     font-size: 13px;
 
     & > div {
-        margin: auto;
+        margin: 0 auto;
         width: 250px;
 
         .login-form {
